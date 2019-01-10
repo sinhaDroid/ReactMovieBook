@@ -18,7 +18,9 @@ class Home extends Component {
   state = {
     movies: [],
     heroImage: null,
-    loading: false
+    loading: false,
+    currentPage: 0,
+    totalPages: 0
   };
 
   componentDidMount() {
