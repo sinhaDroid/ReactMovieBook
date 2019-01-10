@@ -21,6 +21,10 @@ class Home extends Component {
     loading: false
   };
 
+  componentDidMount() {
+    this.setState({ loading: true });
+  }
+
   render() {
     return (
       <div className="rmb-home">
