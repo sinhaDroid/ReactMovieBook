@@ -30,6 +30,11 @@ class Home extends Component {
     this.fetchItems(endpoint);
   }
 
+  // Fetch the data from the api
+  fetchItems = endpoint => {
+    fetch(endpoint);
+  };
+
   render() {
     return (
       <div className="rmb-home">
