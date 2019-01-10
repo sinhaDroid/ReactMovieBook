@@ -1,17 +1,25 @@
-import React, { Component } from 'react';
-import './Home.css';
+import React, { Component } from "react";
+import HeroImage from "../elements/HeroImage/HeroImage";
+import SearchBar from "../elements/SearchBar/SearchBar";
+import FourColGrid from "../elements/FourColGrid/FourColGrid";
+import MovieThumb from "../elements/MovieThumb/MovieThumb";
+import LoadMoreBtn from "../elements/LoadMoreBtn/LoadMoreBtn";
+import Spinner from "../elements/Spinner/Spinner";
+import "./Home.css";
 
 class Home extends Component {
-  state = {
-
-  }
+  state = {};
 
   render() {
     return (
-      <div>
-        Home
+      <div className="rmb-home">
+        <HeroImage />
+        <SearchBar />
+        <FourColGrid />
+        <Spinner />
+        <LoadMoreBtn />
       </div>
-    )
+    );
   }
 }
 
