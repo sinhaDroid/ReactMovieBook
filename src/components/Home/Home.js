@@ -15,7 +15,11 @@ import Spinner from "../elements/Spinner/Spinner";
 import "./Home.css";
 
 class Home extends Component {
-  state = {};
+  state = {
+    movies: [],
+    heroImage: null,
+    loading: false
+  };
 
   render() {
     return (
